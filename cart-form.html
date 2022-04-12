@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InnTree</title>
+ 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Noto+Sans+TC:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./stylesheets/all.css">
+
+    <style>
+      body {
+      font-family: "Noto Sans TC", sans-serif, "Kalam", cursive;
+    }
+    </style>
+
+</head>
+<body>
+  <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid mx-lg-5">
+        <a class="navbar-brand" href="#">
+          <img src="./images/logo.png" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-lg-auto">
+            <li class="nav-item mx-4">
+              <a class="nav-link" aria-current="page" href="./homepage.html"
+                >首頁</a
+              >
+            </li>
+            <li class="nav-item mx-4">
+              <a class="nav-link" href="./service.html">服務介紹</a>
+            </li>
+            <li class="nav-item mx-4">
+              <a class="nav-link" href="./portfolio.html">近期動態</a>
+            </li>
+            <li class="nav-item mx-4">
+              <a class="nav-link" href="./adoption-area.html">領養專區</a>
+            </li>
+            <a href="./cart-form.html"><button type="button" class="btn bg-primary px-4">
+              領養小樹
+            </button></a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <hr class="text-primary mt-0 d-lg-none" style="padding: 1.5px" />
+
+    <!-- header -->
+    <header class="header">
+      <img src="./images/banner.png" class="img-fluid d-none d-lg-block w-100 mt-3" alt="">
+      <img src="./images/banner_mobile.png" class="img-fluid d-lg-none w-100 mt-3"  alt="">
+    </header>
+
+    <div class="container my-5">
+      <div class="card border-0 shadow p-5">
+        <h2 class="d-lg-none text-dark text-center pb-5"><strong>填寫訂購資訊</strong></h2>
+        <form class="row g-3">
+          <div class="col-md-6">
+            <label for="username" class="form-label">姓名</label>
+            <input type="text" class="form-control" id="username">
+          </div>
+          <div class="col-md-6">
+            <label for="surname" class="form-label">姓氏</label>
+            <input type="text" class="form-control" id="surname">
+          </div>
+          <div class="col-md-12">
+            <label for="userphone" class="form-label">手機號碼</label>
+            <input type="tel" class="form-control" id="userphone">
+          </div>
+          <div class="col-md-12">
+            <label for="inputEmail4" class="form-label">電子郵件</label>
+            <input type="email" class="form-control" id="inputEmail4">
+          </div>
+          <div class="row g-3">
+            <label for="inputAddress" class="form-label">收件地址</label>
+            <div class="col-md-6">
+                <select id="inputState" class="form-select">
+                  <option selected>請選擇城市</option>
+                  <option>...</option>
+                </select>
+                </div>
+                <div class="col-md-6">
+                  <select id="inputState" class="form-select">
+                    <option selected>請選擇區域</option>
+                    <option>...</option>
+                  </select>
+                </div>
+                <div class="col-md-12">
+                  <input type="text" class="form-control" id="inputAddress" placeholder="請輸入詳細地址">
+                </div>
+            </div>
+          <div class="col-12">
+            <label for="inputAddress" class="form-label">選擇領養樹樹負責人</label>
+              <select id="inputState" class="form-select">
+                <option selected>阿木</option>
+                <option>...</option>
+              </select>
+          </div>
+          <div class="col-12">
+            <label for="inputAddress" class="form-label">付款方式</label>
+              <select id="inputState" class="form-select">
+                <option selected>信用卡</option>
+                <option>...</option>
+              </select>
+          </div>
+
+          <div class="col-12">
+            <label for="">加購服務</label>
+            <div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">防水模型+100</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2">加框+250</label>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-12">
+            <label for="exampleFormControlTextarea1" class="form-label">備註說明</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <div class="text-center">
+            <p class="fs-4"><strong>總金額 NT$ 300</strong></p>
+          </div>
+          <div class="col-12 text-center">
+            <button type="button" class="btn btn-primary px-5 fs-4">送出訂購資訊</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+
+    <footer class="bg-dark text-white mt-5 py-1 sticky-bottom">
+      <p class="text-center pt-2">
+        Copyright © 2022 小樹社.All rights reserved.
+      </p>
+    </footer>
+
+
+
+  <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>
