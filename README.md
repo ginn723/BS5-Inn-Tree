@@ -1,5 +1,5 @@
 ### 使用 Bootstrap5 結合 Sass 客制化響應式網站:
-https://ginn723.github.io/BS5-Inn-Tree/homepage.html
+https://ginn723.github.io/BS5-Inn-Tree/index.html
 
 
 ### Tools - 開發工具 
